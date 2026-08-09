@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ohm_calutadora</title>
+    <script type="module" crossorigin src="/assets/index-BhnBIBgg.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BPtkEq37.css">
+  </head>
+  <body class="fondo">
+    <div id="app"></div>
+    <div class="contenedor">
+
+    <strong><h1>Calculadora Ley de Ohm</h1></strong>
+
+   <strong><p>Complete solamente dos valores.</p></strong> 
+
+    <input
+        type="number"
+        id="voltaje"
+        name="voltaje"
+        placeholder="Voltaje (V)">
+
+    <input
+        type="number"
+        id="corriente"
+        name="corriente"
+        placeholder="Corriente (A)">
+
+    <input
+        type="number"
+        id="resistencia"
+        name="resistencia"
+        placeholder="Resistencia (Ω)">
+
+    <button onclick="calcular(calcular)">
+        Calcular
+    </button>
+
+    <div id="resultado"></div>
+
+    <section class="output">
+<table class="table">
+  <thead>
+    <tr>
+      <th>Voltaje</th>
+      <th>Corriente</th>
+      <th>Resistencia</th>
+    </tr>
+  </thead>
+
+</table>
+</section>
+
+</div>
+
+
+<script src="/ohm_calutadora/src/supabase.js"></script>
+  </body>
+</html>
+
